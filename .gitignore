@@ -1,1 +1,5 @@
 /venv/
+
+DB/
+
+customagents/__pycache__/
