@@ -8,7 +8,8 @@ class HeuristicCheckAgent(Agent):
             self.data['bot_id'] = None
 
         if 'heuristic_imperatives' not in self.data:
-            self.data['heuristic_imperatives'] = None
+            agentdata = self.agent_data.get('storage')
+            self.data['heuristic_imperatives'] = agentdata.config.data['HeuristicImperatives']
 
     def parse_result(self):
         bot_id = self.data['bot_id']
